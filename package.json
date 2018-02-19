@@ -1,7 +1,7 @@
 {
-  "name": "AngularMed",
+  "name": "angular-med",
   "version": "1.0.0",
-  "description": "Consulta la información del proximo meetup de Angular Mede",
+  "description": "Consulta la información del los Meetups de Angular Medellín",
   "main": "./src/index.js",
   "bin": {
     "angularmed": "bin/angularmed.js"
@@ -14,10 +14,15 @@
     "url": "git+https://github.com/EsneiderSM/test-npm.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Esneider Serna M",
+    "email": "esneider.marulanda@gmail.com",
+    "url": "https://github.com/EsneiderSM"
+  },
+  "license": "MIT",
   "dependencies": {
     "cli-color": "^1.2.0",
+    "cli-table": "^0.3.1",
     "commander": "^2.14.1",
     "node-fetch": "^2.0.0"
   }

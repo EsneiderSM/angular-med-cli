@@ -1,6 +1,6 @@
 {
-  "name": "angular-med",
-  "version": "1.0.0",
+  "name": "angular-med-cli",
+  "version": "1.0.2",
   "description": "Consulta la información del los Meetups de Angular Medellín",
   "main": "./src/index.js",
   "bin": {
@@ -13,7 +13,15 @@
     "type": "git",
     "url": "git+https://github.com/EsneiderSM/test-npm.git"
   },
-  "keywords": [],
+  "keywords": [
+    "AngularMed",
+    "angularmed",
+    "angular-med-cli",
+    "Angular Medellín CLI",
+    "Angular",
+    "Angular Medellín",
+    "Medellín"
+  ],
   "author": {
     "name": "Esneider Serna M",
     "email": "esneider.marulanda@gmail.com",

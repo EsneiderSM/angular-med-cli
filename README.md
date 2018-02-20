@@ -1,10 +1,10 @@
 ## Angular Medellín CLI
-Conoce la información de nuestro meetup y  cuándo será el próximo de nuestro meetup desde tu Consola
+Conoce la información de nuestro meetup y cuándo serán nuestros próximos eventos desde tu consola o cli.
 
 ## Instalación
 Instala AngularMed-CLI de manera global:
 ```bash
-$ npm install --global angularmed-cli
+$ npm install --global angular-med-cli
 ```
 
 ## Uso
@@ -16,7 +16,7 @@ $ npm angularmed meetup
 Para obtener más información sobre nuestro meetup
 ```bash 
 $ npm angularmed meetup -i
-// ó
+//ó
 $ npm angularmed meetup --info
 ```
 

@@ -10,7 +10,7 @@ var Table = require('cli-table');
 textAngularMed();
 
 program
-    .version('1.0.0')
+    .version('1.0.2')
     .usage('<meetup> [opciones]')
     .option('-i, --info', 'Información sobre Angular Medellín')
     .description('Conoce la información de los próximos meetups de Angular Medellín');
@@ -39,7 +39,7 @@ program.parse(process.argv);
 function textAngularMed() {
     console.log(clc.red('     ___                     _               ') + clc.blue('    __   _ ____  _____        '));
     console.log(clc.red('    /   |                   | |              ') + clc.blue('   /  | / |  __||     \\      '));
-    console.log(clc.red('   / /| |_____    __ _ _   _| | ___ _ _ __   ') + clc.blue('  /   |/  | |__ |  |\\  |     '));
+    console.log(clc.red('   / /| |______   __ _ _   _| | ___ _ _ __   ') + clc.blue('  /   |/  | |__ |  |\\  |     '));
     console.log(clc.red('  / __  |  __  \\/  _` | | | | |/  _` | \'__|') + clc.blue('   /        |  __||  | | |    '));
     console.log(clc.red(' / /  | | |  | |  |_| | |_| | |  |_| | |     ') + clc.blue('/ /|  /|  | |__ |  |/  |_     '));
     console.log(clc.red('/_/   |_|_|  |_|\\__,  |\\__,_|_|\\___,_|_|  ') + clc.blue('  /_/ |_/ |__|____||_____/|_| '));
@@ -55,13 +55,13 @@ function allMeetups() {
             if (resp.length > 0) {
                 resp.map(event => {
 
-                    console.log(clc.black.bgYellow("Evento:") + " " + event.name);
-                    console.log(clc.black.bgYellow("Fecha:") + " " + event.local_date + " " + clc.black.bgYellow("Hora:") + " " + event.local_time);
+                    console.log(clc.black.bgYellow(" " + event.name + " "));
+                    console.log(clc.white.bgBlue(" Fecha: ") + " " + event.local_date + " " + clc.white.bgBlue(" Hora: ") + " " + event.local_time);
                     if (event.venue) {
-                        console.log(clc.black.bgYellow("Lugar:") + " " + event.venue.address_1);
+                        console.log(clc.white.bgBlue(" Lugar: ") + " " + event.venue.address_1);
                     };
 
-                    console.log(clc.black.bgYellow("\nDetalles:\n") + remplaceHtml(event.description));
+                    console.log(clc.white.bgBlue("\n Detalles: \n") + remplaceHtml(event.description));
                     console.log("\n");
                 })
             }
@@ -75,9 +75,10 @@ function allMeetups() {
 function infoMeetup() {
     getInfoMeetup()
         .then(resp => {
-            console.log(clc.white.bgBlue(" " + resp.name + " "));
-            console.log(resp.localized_location);
-            console.log(resp.link + "\n");
+            
+            console.log(clc.black.bgYellow(" " + resp.name + " "));
+            console.log(clc.white.bgBlue(" Lugar: ") + resp.localized_location);
+            console.log(clc.white.bgBlue(" Sitio: ") + resp.link + "\n");
             console.log(remplaceHtml(resp.description));
             console.log("\n");
         })

@@ -10,14 +10,14 @@ $ npm install --global angular-med-cli
 ## Uso
 Para conocer cuando será nuestro próximo meetup
 ```bash 
-$ npm angularmed meetup
+$ angularmed meetup
 ```
 
 Para obtener más información sobre nuestro meetup
 ```bash 
-$ npm angularmed meetup -i
+$ angularmed meetup -i
 //ó
-$ npm angularmed meetup --info
+$ angularmed meetup --info
 ```
 
 ## Licencia

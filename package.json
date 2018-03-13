@@ -1,6 +1,6 @@
 {
   "name": "angular-med-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Consulta la información del los Meetups de Angular Medellín",
   "main": "./src/index.js",
   "bin": {

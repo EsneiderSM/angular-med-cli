@@ -10,7 +10,7 @@ var Table = require('cli-table');
 textAngularMed();
 
 program
-    .version('1.0.3')
+    .version('1.0.4')
     .usage('<meetup> [opciones]')
     .option('-i, --info', 'Información sobre Angular Medellín')
     .description('Conoce la información de los próximos meetups de Angular Medellín');
